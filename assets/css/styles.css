@@ -2,10 +2,228 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #1ebfc1;
+}
+
 html {
     font-size: 62.5%;
 }
 
-.body {
+body {
     font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/** Common */
+.btn {
+    min-width: 186px;
+    height: 68px;
+    border-radius: 1.4rem;
+    background-color: #1ebfc1;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 20px 41px;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100% - 270px);
+}
+
+a {
+    text-decoration: none;
+}
+
+/** Header */
+.header {
+    height: 48px;
+    background-color: #fff;
+    margin-top: 52px;
+    margin-bottom: 50px;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+}
+
+.header .navigation {
+    margin-left: auto;
+}
+
+.header .list {
+    display: flex;
+    margin-right: 138px;
+}
+
+.header .list a {
+    color: #2f3a3b;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 39px;
+}
+
+.header .list a:hover {
+    color: #171100;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header .cta-login {
+    color: #494949;
+    text-align: center;
+    font-size: 1.6rem;
+    margin-right: 24px;
+}
+
+.header .cta-login:hover {
+    color: #171100;
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header .btn-sign-up {
+    color: #1ebfc1;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    padding: 12px 24px;
+    background-color: transparent;
+    cursor: pointer;
+    min-width: 108px;
+}
+
+/** Hero */
+.hero .body {
+    display: flex;
+    align-items: center;
+}
+
+.hero .hero-info {
+    width: 39%;
+    margin-right: 136px;
+}
+
+.hero-info .heading {
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-weight: 700;
+    line-height: 1.16; /* 116.129% */
+    width: 458px;
+    margin-bottom: 46px;
+}
+
+.hero-info .welcome {
+    color: #767e7e;
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+}
+
+.hero-info .desc {
+    color: #9da6a5;
+    font-size: 1.8rem;
+    line-height: 1.7; /* 177.778% */
+    max-width: 374px;
+    margin-bottom: 52px;
+}
+
+.hero-info .cta-group {
+    display: flex;
+}
+
+.hero-info .play {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    border: none;
+    background-color: #fff;
+    border-radius: 62px;
+    box-shadow: 0 22px 50px 0 rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    margin-left: 50px;
+}
+
+.hero .hero-media {
+    position: relative;
+}
+
+.hero-media .hero-images {
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+}
+
+.hero-media .stats-course {
+    border-radius: 1.8rem;
+    background: #fefefd;
+    width: 157px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 17px 25px;
+    justify-content: space-between;
+    position: absolute;
+    right: 459px;
+    top: 149px;
+}
+
+.hero-media .desc-stat {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.hero-media .stats-schedules {
+    width: 124px;
+    height: 132px;
+    padding: 16px 36px;
+    border-radius: 1.8rem;
+    background: #fefefd;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    right: 517px;
+    bottom: 46px;
+}
+
+.hero-media .stats-active-students {
+    padding: 17px 35px;
+    width: 207px;
+    height: 90px;
+    border-radius: 24px;
+    background: #fefefd;
+    position: absolute;
+    bottom: 41px;
+    right: 45px;
+}
+
+.hero-media .avatars {
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 7px;
+}
+
+.hero-media .avatar {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: -7px;
 }
