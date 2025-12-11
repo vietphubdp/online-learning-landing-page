@@ -444,6 +444,8 @@ a {
 
 .about .body {
     display: flex;
+    align-items: start;
+    justify-content: space-between;
 }
 
 .about .content-block {
@@ -490,10 +492,76 @@ a {
 }
 
 .about .content-block .btn-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 50px;
     height: 50px;
     border-radius: 5rem;
-    background: #2ac9bf;
+    background: var(--primary-color);
     border: none;
     margin-right: 30px;
+    cursor: pointer;
+}
+
+.about .content-block .btn-arrow:hover {
+    background-color: #12797b;
+}
+
+.about .media-block {
+    width: 38%;
+    position: relative;
+}
+
+.about .media-block .avatar {
+    border-radius: 50%;
+    position: absolute;
+}
+
+.media-block .avatar.avatar-main {
+    min-width: 235px;
+    height: 235px;
+    background-color: #ff8282;
+    right: 171px;
+    top: 107px;
+}
+
+.media-block .avatar.avatar-1 {
+    min-width: 92px;
+    height: 92px;
+    background-color: #1ebfc1;
+    top: 0;
+    left: 144px;
+}
+
+.media-block .avatar.avatar-2 {
+    min-width: 78px;
+    height: 78px;
+    background-color: #ffc147;
+    left: 0;
+    bottom: 145px;
+}
+
+.media-block .avatar.avatar-3 {
+    min-width: 78px;
+    height: 78px;
+    background-color: #ff947a;
+    bottom: 0;
+    left: 212px;
+}
+
+.media-block .avatar.avatar-4 {
+    min-width: 78px;
+    height: 78px;
+    background-color: #b1dfdc;
+    bottom: 29px;
+    right: 32px;
+}
+
+.media-block .avatar.avatar-5 {
+    min-width: 110px;
+    height: 110px;
+    background-color: #bf83ff;
+    right: 0;
+    top: 19px;
 }
