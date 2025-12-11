@@ -444,12 +444,12 @@ a {
 
 .about .body {
     display: flex;
-    align-items: start;
     justify-content: space-between;
 }
 
 .about .content-block {
     width: 24%;
+    margin-right: 72px;
 }
 
 .about .content-block .open-quote {
@@ -509,13 +509,12 @@ a {
 }
 
 .about .media-block {
-    width: 38%;
+    width: 58%;
     position: relative;
 }
 
 .about .media-block .avatar {
     border-radius: 50%;
-    position: absolute;
 }
 
 .media-block .avatar.avatar-main {
@@ -524,6 +523,7 @@ a {
     background-color: #ff8282;
     right: 171px;
     top: 107px;
+    position: absolute;
 }
 
 .media-block .avatar.avatar-1 {
@@ -532,6 +532,7 @@ a {
     background-color: #1ebfc1;
     top: 0;
     left: 144px;
+    position: absolute;
 }
 
 .media-block .avatar.avatar-2 {
@@ -540,6 +541,7 @@ a {
     background-color: #ffc147;
     left: 0;
     bottom: 145px;
+    position: absolute;
 }
 
 .media-block .avatar.avatar-3 {
@@ -548,6 +550,7 @@ a {
     background-color: #ff947a;
     bottom: 0;
     left: 212px;
+    position: absolute;
 }
 
 .media-block .avatar.avatar-4 {
@@ -556,6 +559,7 @@ a {
     background-color: #b1dfdc;
     bottom: 29px;
     right: 32px;
+    position: absolute;
 }
 
 .media-block .avatar.avatar-5 {
@@ -564,4 +568,28 @@ a {
     background-color: #bf83ff;
     right: 0;
     top: 19px;
+    position: absolute;
+}
+
+/** CTA Section */
+.cta-section {
+    margin-top: 130px;
+    background: #def6f5;
+    padding: 67px 0 88px;
+}
+
+.body-cta {
+    display: flex;
+    align-items: center;
+}
+
+.cta-section .cta-info {
+    margin-right: 410px;
+}
+
+.cta-section .cta-info .desc {
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: 1.5;
 }
