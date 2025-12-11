@@ -296,7 +296,7 @@ a {
 
 /** Courses */
 .courses {
-    margin-top: 130px;
+    margin: 130px 0 389px;
 }
 
 .courses .label {
@@ -409,4 +409,91 @@ a {
 
 .courses-detail span.desc:first-child {
     margin-right: 10px;
+}
+
+/** Statis */
+.statis .body {
+    width: 862px;
+    max-width: calc(100% - 600px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.statis .statis-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.statis .statis-number {
+    color: #0d1111;
+    text-align: center;
+    font-size: 6.2rem;
+    font-weight: 700;
+}
+
+.statis .desc {
+    color: #767e7e;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.about {
+    margin-top: 264px;
+}
+
+.about .body {
+    display: flex;
+}
+
+.about .content-block {
+    width: 24%;
+}
+
+.about .content-block .open-quote {
+    margin-bottom: 27px;
+}
+
+.about blockquote {
+    color: #5d6564;
+    font-size: 3.2rem;
+    line-height: 1.5; /* 150% */
+    width: 419px;
+    margin-bottom: 33px;
+}
+
+.about .author {
+    color: #767e7e;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 52px;
+}
+
+.about .author::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 2px;
+    background: #070707;
+    margin-right: 5px;
+}
+
+.about .author strong {
+    color: #070707;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.about .content-block .arrow {
+    display: flex;
+}
+
+.about .content-block .btn-arrow {
+    min-width: 50px;
+    height: 50px;
+    border-radius: 5rem;
+    background: #2ac9bf;
+    border: none;
+    margin-right: 30px;
 }
